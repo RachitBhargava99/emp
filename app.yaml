@@ -1,0 +1,5 @@
+runtime: python37
+entrypoint: gunicorn -b :$PORT run:app
+
+env_variables:
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/hackventure-emp:us-east1:emp-sql;dbname=emp_database

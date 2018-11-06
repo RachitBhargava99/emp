@@ -1,0 +1,8 @@
+requests
+flask
+flask-bcrypt
+flask-login
+flask-mail
+flask-sqlalchemy
+gunicorn
+pymysql

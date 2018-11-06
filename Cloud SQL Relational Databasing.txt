@@ -1,0 +1,4 @@
+ALTER TABLE relationship ADD CONSTRAINT FOREIGN KEY (user_id) REFERENCES user(id);
+ALTER TABLE relationship ADD CONSTRAINT FOREIGN KEY (event_id) REFERENCES event(id);
+
+INSERT INTO relationship (user_id, event_id) VALUES (1,1);
